@@ -1,0 +1,15 @@
+{
+  "name": "amjadpaint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^18.3.2"
+  }
+}

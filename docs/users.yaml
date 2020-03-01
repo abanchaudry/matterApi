@@ -1,0 +1,54 @@
+paths:
+  /api/users:
+    get:
+      tags:
+        - users
+      summary: gets all the users
+      description: you can get all the results from the database for the users
+      produces:
+        - application/json
+      responses:
+        "200":
+          description: An array of users
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/users"
+        "400":
+          description: Invalid value request
+        "404":
+          description: users not found
+      
+    post:
+      tags:
+        - users
+      summary: post users
+      description: you can get all the results from the database for the users
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: string
+          description: users name to create the users
+          required: true
+          schema:
+            $ref: "#/definitions/users"
+      responses:
+        "200":
+          description: data scucessfully saved
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/users"
+        "400":
+          description: Invalid value request
+      security:
+        responses:
+          "401":
+            description: Access denied. No token provided.
+
+definitions:
+  users:
+    properties:
+      name:
+        type: string
