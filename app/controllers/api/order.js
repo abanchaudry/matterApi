@@ -29,6 +29,12 @@ router.get("/allOrders",  async (req, res, next) => {
   }) 
 });
 
+//route to check test
+router.get("/testing",  async (req, res, next) => { 
+  
+      res.status(200).json({message: "Order not testing found"});
+ 
+});
 
 //route to get order with billNO
 router.get("/orderByBillNo",  async (req, res, next) => { 
