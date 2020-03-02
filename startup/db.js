@@ -6,7 +6,7 @@ mongoose = require('mongoose');
 
 
 //const connectionString = 'mongodb://' + process.env.DB_HOST + '/' + process.env.DB_NAME;
- const connectionString = 'mongodb+srv://aban:aban123@cluster0-bexd6.mongodb.net/test?retryWrites=true&w=majority';
+ const connectionString = 'mongodb+srv://aban:aban123@cluster0-bexd6.mongodb.net/matter?retryWrites=true&w=majority';
 const transport = new winston.transports.File({ filename: 'logfile.log' });
 const logger = winston.createLogger({
     transports: [transport]
