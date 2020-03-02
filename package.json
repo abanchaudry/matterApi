@@ -1,7 +1,7 @@
 {
-  "name": "matter Api",
+  "name": "amjadpaint",
   "version": "1.0.0",
-  "description": "matter description",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,9 +11,5 @@
   "license": "ISC",
   "dependencies": {
     "express": "^18.3.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/abanchaudry/matterApi.git"
   }
 }
